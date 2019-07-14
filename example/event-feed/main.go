@@ -42,7 +42,7 @@ func main() {
 				log.Printf("The order with ID [%s] was cancelled, reason: %v\n", entry.AggregateID, data["reason"])
 			case "PaymentReceivedEvent":
 				log.Printf("The order with ID [%s] received payment: %v\n", entry.AggregateID, data["amountPaid"])
-			case "OrderFullyPaid":
+			case "OrderFullyPaidEvent":
 				log.Printf("The order with ID [%s] is fully paid\n", entry.AggregateID)
 			default:
 				log.Printf("Don't know how to handle events of type: %s", event.Type)
