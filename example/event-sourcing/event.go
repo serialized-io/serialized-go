@@ -20,9 +20,10 @@ type OrderFullyPaidEvent struct {
 }
 
 type OrderCancelledEvent struct {
-	OrderID    OrderID    `json:"orderId"`
-	CustomerID CustomerID `json:"customerId"`
-	Reason     string     `json:"reason"`
+	OrderID     OrderID    `json:"orderId"`
+	CustomerID  CustomerID `json:"customerId"`
+	OrderAmount Amount     `json:"orderAmount"`
+	Reason      string     `json:"reason"`
 }
 
 type OrderShippedEvent struct {
