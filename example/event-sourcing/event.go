@@ -3,9 +3,9 @@ package main
 type OrderEvent interface{}
 
 type OrderPlacedEvent struct {
-	OrderID    OrderID    `json:"orderId"`
-	CustomerID CustomerID `json:"customerId"`
-	Amount     Amount     `json:"amount"`
+	OrderID     OrderID    `json:"orderId"`
+	CustomerID  CustomerID `json:"customerId"`
+	OrderAmount Amount     `json:"orderAmount"`
 }
 
 type PaymentReceivedEvent struct {
