@@ -1,8 +1,8 @@
 # Serialized.io Go client
 
-[![Build Status](https://travis-ci.org/marcusolsson/serialized-go.svg?branch=master)](https://travis-ci.org/marcusolsson/serialized-go)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg?style=flat)](https://godoc.org/github.com/marcusolsson/serialized-go)
-[![Go Report Card](https://goreportcard.com/badge/github.com/marcusolsson/serialized-go)](https://goreportcard.com/report/github.com/marcusolsson/serialized-go)
+[![Build Status](https://travis-ci.org/serialized-io/serialized-go.svg?branch=master)](https://travis-ci.org/serialized-io/serialized-go)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg?style=flat)](https://godoc.org/github.com/serialized-io/serialized-go)
+[![Go Report Card](https://goreportcard.com/badge/github.com/serialized-io/serialized-go)](https://goreportcard.com/report/github.com/serialized-io/serialized-go)
 [![License MIT](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](LICENSE)
 
 Provides access to the [Serialized.io](https://serialized.io) REST API.
@@ -10,7 +10,7 @@ Provides access to the [Serialized.io](https://serialized.io) REST API.
 ## Installation
 
 ```
-go get github.com/marcusolsson/serialized-go
+go get github.com/serialized-io/serialized-go
 ```
 
 ## Usage
@@ -24,7 +24,7 @@ import (
     "log"
     "os"
 
-    serialized "github.com/marcusolsson/serialized-go"
+    "github.com/serialized-io/serialized-go"
 )
 
 func main() {

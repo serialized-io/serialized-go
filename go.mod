@@ -1,4 +1,6 @@
-module github.com/marcusolsson/serialized-go
+module github.com/serialized-io/serialized-go
+
+go 1.14
 
 require (
 	github.com/alecthomas/kingpin v2.2.6+incompatible

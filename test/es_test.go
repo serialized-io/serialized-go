@@ -11,7 +11,7 @@ import (
 
 	"github.com/google/uuid"
 
-	serialized "github.com/marcusolsson/serialized-go"
+	"github.com/serialized-io/serialized-go"
 )
 
 func TestAPI(t *testing.T) {

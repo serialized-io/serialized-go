@@ -11,7 +11,7 @@ import (
 	"time"
 
 	"github.com/alecthomas/kingpin"
-	serialized "github.com/marcusolsson/serialized-go"
+	"github.com/serialized-io/serialized-go"
 )
 
 func feedsGetHandler(c *serialized.Client, feed string, since int64, showCurrent bool) error {

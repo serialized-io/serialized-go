@@ -6,7 +6,7 @@ import (
 	"reflect"
 
 	"github.com/google/uuid"
-	"github.com/marcusolsson/serialized-go"
+	"github.com/serialized-io/serialized-go"
 )
 
 type SerializedEventService struct {

@@ -6,7 +6,7 @@ import (
 	"log"
 	"os"
 
-	serialized "github.com/marcusolsson/serialized-go"
+	"github.com/serialized-io/serialized-go"
 )
 
 func main() {
