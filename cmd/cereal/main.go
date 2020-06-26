@@ -4,7 +4,7 @@ import (
 	"os"
 
 	"github.com/alecthomas/kingpin"
-	serialized "github.com/marcusolsson/serialized-go"
+	"github.com/serialized-io/serialized-go"
 )
 
 func main() {

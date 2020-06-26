@@ -4,7 +4,7 @@ import (
 	"context"
 
 	"github.com/google/uuid"
-	serialized "github.com/marcusolsson/serialized-go"
+	"github.com/serialized-io/serialized-go"
 )
 
 func eventsStoreHandler(c *serialized.Client, aggType, aggID, eventType, eventID, data string, version int64) error {

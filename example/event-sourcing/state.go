@@ -3,7 +3,7 @@ package main
 import (
 	"encoding/json"
 
-	"github.com/marcusolsson/serialized-go"
+	"github.com/serialized-io/serialized-go"
 )
 
 type OrderState struct {
@@ -31,7 +31,7 @@ func buildState(id OrderID, version int64, events []*serialized.Event) OrderStat
 
 			state.CustomerID = ev.CustomerID
 			state.Status = OrderStatusPlaced
-			state.Amount = ev.Amount
+			state.Amount = ev.OrderAmount
 		case "PaymentReceivedEvent":
 			var ev PaymentReceivedEvent
 			json.Unmarshal(e.Data, &ev)

@@ -5,7 +5,7 @@ A command-line interface for the Serialized.io API.
 ## Installation
 
 ```
-go get -u github.com/marcusolsson/serialized-go/cmd/cereal
+go get -u github.com/serialized-io/serialized-go/cmd/cereal
 ```
 
 ## Usage

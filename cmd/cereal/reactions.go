@@ -7,7 +7,7 @@ import (
 	"strings"
 	"text/tabwriter"
 
-	serialized "github.com/marcusolsson/serialized-go"
+	"github.com/serialized-io/serialized-go"
 )
 
 func reactionsDefinitionsGetHandler(c *serialized.Client, name string) error {

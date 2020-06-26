@@ -45,8 +45,8 @@ func (o *Order) Place(amount Amount) (OrderPlacedEvent, error) {
 		return OrderPlacedEvent{}, errors.New("order already placed")
 	}
 	return OrderPlacedEvent{
-		CustomerID: o.CustomerID,
-		Amount:     amount,
+		CustomerID:  o.CustomerID,
+		OrderAmount: amount,
 	}, nil
 }
 
