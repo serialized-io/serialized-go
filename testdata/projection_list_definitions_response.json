@@ -1,22 +1,22 @@
 {
-    "definitions": [
+  "definitions": [
+    {
+      "projectionName": "orders",
+      "feedName": "order",
+      "handlers": [
         {
-            "projectionName": "orders",
-            "feedName": "order",
-            "handlers": [
-                {
-                    "eventType": "OrderCancelledEvent",
-                    "functions": [
-                        {
-                            "function": "inc",
-                            "targetSelector": "$.projection.orders[?]",
-                            "eventSelector": "$.event[?]",
-                            "targetFilter": "@.orderId == $.event.orderId",
-                            "eventFilter": "@.orderAmount > 4000"
-                        }
-                    ]
-                }
-            ]
+          "eventType": "OrderCancelledEvent",
+          "functions": [
+            {
+              "function": "inc",
+              "targetSelector": "$.projection.orders[?]",
+              "eventSelector": "$.event[?]",
+              "targetFilter": "@.orderId == $.event.orderId",
+              "eventFilter": "@.orderAmount > 4000"
+            }
+          ]
         }
-    ]
+      ]
+    }
+  ]
 }
