@@ -48,7 +48,7 @@ func TestFeedList(t *testing.T) {
 
 func TestFeed(t *testing.T) {
 	ts := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		b, err := loadJSON("testdata/feed_log_response.json")
+		b, err := loadJSON("testdata/feed_response.json")
 		if err != nil {
 			t.Fatal(err)
 		}
