@@ -1,8 +1,8 @@
 {
-    "projections": [
-        {
-            "projectionId": "string (uuid)",
-            "data": "object"
-        }
-    ]
+  "projections": [
+    {
+      "projectionId": "string (uuid)",
+      "data": "object"
+    }
+  ]
 }
