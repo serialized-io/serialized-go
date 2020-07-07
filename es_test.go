@@ -20,7 +20,7 @@ func TestStore(t *testing.T) {
 		if err != nil {
 			t.Fatal(err)
 		}
-		want, err := loadJSON("testdata/event_store_request.json")
+		want, err := loadJSON("testdata/aggregate_store_request.json")
 		if err != nil {
 			t.Fatal(err)
 		}
@@ -74,7 +74,7 @@ func TestAggregateExists(t *testing.T) {
 
 func TestLoadAggregate(t *testing.T) {
 	ts := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		b, err := loadJSON("testdata/event_load_response.json")
+		b, err := loadJSON("testdata/aggregate_load_response.json")
 		if err != nil {
 			t.Fatal(err)
 		}
