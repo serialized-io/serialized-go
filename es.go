@@ -31,7 +31,7 @@ func (c *Client) Store(ctx context.Context, aggType, aggID string, version int64
 		Events:          events,
 	}
 
-	req, err := c.newRequest("POST", "/aggregates/"+aggType+"/events", reqBody)
+	req, err := c.newRequest("POST", "/aggregates/"+aggType+"/"+aggID+"/events", reqBody)
 	if err != nil {
 		return err
 	}
