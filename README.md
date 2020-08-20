@@ -1,11 +1,11 @@
-# Serialized.io Go client
+# Serialized Go client
 
 [![Build Status](https://travis-ci.org/serialized-io/serialized-go.svg?branch=master)](https://travis-ci.org/serialized-io/serialized-go)
 [![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg?style=flat)](https://godoc.org/github.com/serialized-io/serialized-go)
 [![Go Report Card](https://goreportcard.com/badge/github.com/serialized-io/serialized-go)](https://goreportcard.com/report/github.com/serialized-io/serialized-go)
 [![License MIT](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](LICENSE)
 
-Provides access to the [Serialized.io](https://serialized.io) REST API.
+Provides access to the [Serialized](https://serialized.io) API.
 
 ## Installation
 
